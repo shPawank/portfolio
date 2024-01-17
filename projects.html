@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+            background-color:rgb(12, 20, 46);
+            }
+        nav ul{
+            display: flex;
+            justify-content: center;
+            }
+            nav ul li{
+            list-style: none;
+            margin: 23px;
+            }
+        .active{
+            color: red;
+        }
+        .sec{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            background-color: violet;
+            color: blanchedalmond;
+        }
+        .sec .left{
+            height: 100vh;
+            width: 50%;
+            background-color: rgb(10, 3, 35);
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4rem;
+            padding: 20px;
+        }
+        .sec .right{
+            height: 100vh;
+            width: 50%;
+            background-color: rgb(125, 108, 236);
+            
+        }
+        img{
+            justify-content: center;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            aspect-ratio: 3/2;
+            object-fit: contain;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="right">
+                <ul>
+                    <li><a href="personalPort.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contactMe.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <p style="color: rgb(200, 233, 10);background-color: rgb(28, 28, 74);   height: 20px;">Online Shopping System</p>
+    <section class="sec">
+        <!-- <img src="shop.png" alt=""> -->
+        <section class="left">
+            Project Overview
+            Description: The Online Shopping System is a comprehensive e-commerce platform designed to provide users with a seamless and secure shopping experience. 
+            This project was developed to cater to the growing trend of online shopping, enabling users to browse through a wide range of products, add them to their cart,
+             and complete the purchase through a secure checkout process.<br>
+            Key Features<br>
+            Product Catalog:
+            Displayed a diverse range of products with detailed information, including images, descriptions, and prices.
+            Implemented product categorization and filtering for easy navigation.<br>
+            User Authentication:
+            Implemented a secure user authentication system, allowing users to register, log in, and manage their profiles.<br>
+            Shopping Cart:
+            Enabled users to add products to their cart, update quantities, and remove items.
+            Provided a real-time view of the shopping cart with the total cost.<br>
+            Checkout Process:
+            Streamlined the checkout process with a user-friendly interface.
+            Integrated a secure payment gateway for transactions.<br>
+            Order Management:
+            Implemented an order management system for users to view their order history and track order status.<br>
+            User Reviews and Ratings:
+            Allowed users to leave reviews and ratings for products, enhancing the shopping experience.<br>
+            Responsive Design:
+            Ensured a responsive design for optimal user experience across various devices, including desktops, tablets, and smartphones.
+        </section>
+        <section class="right">
+            <img src="shop.png" alt="">
+        </section>
+    </section>          
+</body>
+</html>

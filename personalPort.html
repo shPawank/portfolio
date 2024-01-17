@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pawan - Developer Portfolio</title>
+    <link rel="stylesheet" href="ppstyel.css">
+</head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(15, 15, 56);
+    color: white;
+}
+nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color:rgb(12, 20, 46);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 23px;
+}
+nav ul li a{
+   text-decoration: none;
+   color: rgb(69, 31, 223);
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(142, 142, 245);
+    font-size: 1.05rem;
+ }
+.left{
+    font-size: 1.5rem;
+    
+}
+.firstsection{
+    display:flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+.firstsection > div{
+    width: 30%;
+    margin: 50px 0;
+    height: 420px;
+}
+
+.leftsection{
+    /* background-color: red; */
+    /* width: 30%; */
+    font-size: 2rem;
+    margin: 30px 0;
+
+}
+.rightsection img{
+    width: 100%;
+    margin: 30px 0;
+}
+.purple{
+    color:blueviolet;
+}
+#element{
+    color:blueviolet;
+}
+.secondsection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+main hr{
+    border: 0;
+    background: lavender;
+    height: 1.2px;
+    margin: 40px 84px;
+}
+.secondsection .box{
+    
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 26px 0;
+    display: flex;
+    justify-content: center;
+    color: rgb(193, 165, 165);
+}
+.secondsection .vertical{
+    height: 53px;
+    width: 2px;
+    background-color: white;
+    margin:0 100px ;
+    display: flex;
+    right: 5px;   
+}
+
+.foot{
+    height: 40px;
+    background-color: rgb(33, 7, 57);
+    font-size: 1.2rem;
+    text-align: center  ;
+}
+
+.secondsection .box .vertical img{
+    position: relative;
+    height: 22px;
+    width: 22px;
+    top: -25px;
+    left: -7px;
+}
+.vertical-title{
+    position: relative;
+    top: 53px;
+    right:40px;
+    width: 150px;
+    color: red;
+}
+.vertical-desc{
+    position: relative;
+    color: yellow;
+    top: 110px;
+    right: 115px;
+    font-size: .7rem;
+}
+.active{
+    color: red;
+}
+    </style>
+<body>
+    <header>
+        <nav>
+            <div class="left">Pawan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="personalPort.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contactMe.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hii,My name is <span class="purple">Pawan K</span>
+                <div>and I am a passionate</div>
+                <!-- <div>Web Developer</div> -->
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="photo.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span><u>What I have done so far:</u></span>
+            <h1>Past Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="photo2.png" alt="">
+                    <div class="vertical-title">HTML Developer<pre>(2018-2019)</pre></div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, doloribus.</div>
+                </div>
+                <div class="vertical">
+                    <img src="photo2.png" alt="">
+                    <div class="vertical-title">Frontend Developer<pre>(2019-2020)</pre></div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, doloribus.</div>
+                </div>
+                <div class="vertical">
+                    <img src="photo2.png" alt="">
+                    <div class="vertical-title">FullStack Developer<pre>(2020-2021)</pre></div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, doloribus.</div>
+                </div>
+                <div class="vertical">
+                    <img src="photo2.png" alt="">
+                    <div class="vertical-title">Devops Engineer<pre>(2021-2023)</pre></div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, doloribus.</div>
+                </div>
+                </div>
+        </section>
+        <footer class="foot"> &#9993;  sh.pawank2101@gmail.com<span>&nbsp;  &#9742;</span> +918887571256</footer><br>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', { 
+            strings: ['<i>HTML Developer</i>','<i>Web Developer</i>', '<i>Web Designer</i>', '<i>Video Editor</i>'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
